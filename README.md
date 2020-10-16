@@ -38,15 +38,15 @@ _Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into 
 
 2. Install [Babel Preset](https://babeljs.io/docs/en/presets) & [Class Properties Plugin](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties)
 
+> __npm install @babel/preset-env --save-dev__ <br/>
+> __npm install --save-dev @babel/plugin-proposal-class-properties__
+
 __@babel/preset-env__ Allows you to use the latest JavaScript without needing to micromanage which syntax transforms (and optionally, browser polyfills) are needed by your target environment(s). This both makes your life easier and JavaScript bundles smaller!
 
 __@babel/plugin-proposal-class-properties__ transform ES6 __class__ synthecic sugar into JavaScript __Prototype__ 
 
-> __npm install @babel/preset-env --save-dev__ <br/>
-> __npm install --save-dev @babel/plugin-proposal-class-properties__
 
-3. Create __.babelrc__ file in your project's root directory
-In __.babelrc__ add the following code
+3. Create __.babelrc__ file in your project's root directory & add the following code in __.babelrc__ 
       
         {
         "presets": ["@babel/preset-env"],
@@ -56,9 +56,10 @@ In __.babelrc__ add the following code
 ## Watch File change with Node Monitor
 
 1. Install __[Nodemon](https://www.npmjs.com/package/nodemon)__
-_Nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected._
 >   __npm i -d nodemon__ <br/>
 >   __npm install rimraf --save-dev__
+
+_Nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected._
 
 2. Update __package.json__ by adding following line for precompiling ES6 and allowing nodemon to restart server when file changes
 
@@ -68,6 +69,7 @@ _Nodemon is a tool that helps develop node.js based applications by automaticall
         +   "restart": "rimraf dist && npm run start",
         +   "dev": "nodemon --exec npm run restart"
         }
+
 3. Create __nodemon.json__ file in your project's root directory
 
 4. Add src folder in watchlist by adding following code in __nodemon.json__
