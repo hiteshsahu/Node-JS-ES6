@@ -1,7 +1,6 @@
 # Node JS With ES6
-> ## How to Set up & use [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) in Express JS & Node JS Server.
 
-## How to Setup Node JS Server with ES6 
+## How to Setup Node JS Server with [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [Babel](https://babeljs.io/docs/en/), & __[Nodemon](https://www.npmjs.com/package/nodemon)__
 
         import NodeServer from "./server/NodeServer"
         import ExpressServer from "./server/ExpressServer"
@@ -76,5 +75,5 @@ _Nodemon is a tool that helps develop node.js based applications by automaticall
 
         {"watch": ["src"]}
 
-### Finally Run the project
+## Finally Run the project
  > __npm run dev__       
