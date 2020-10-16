@@ -59,7 +59,7 @@ __@babel/plugin-proposal-class-properties__ transform **`ES6 class`** synthecic 
 
 _Nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected._
 
-2. Update __package.json__ by adding following line for precompiling ES6 and allowing nodemon to restart server when file changes
+2. Update __`package.json`__ by adding following line for precompiling ES6 and allowing nodemon to restart server when file changes
 
         "scripts": {
         +   "build": "babel src -d dist"
@@ -68,11 +68,11 @@ _Nodemon is a tool that helps develop node.js based applications by automaticall
         +   "dev": "nodemon --exec npm run restart"
         }
 
-3. Create __nodemon.json__ file in your project's root directory
+3. Create __`nodemon.json`__ file in your project's root directory
 
-4. Add src folder in watchlist by adding following code in __nodemon.json__
+4. Add src folder in watchlist by adding following code in __`nodemon.json`__
 
         {"watch": ["src"]}
 
 ## Finally Run the project
- > __npm run dev__       
+ > __`npm run dev`__       
