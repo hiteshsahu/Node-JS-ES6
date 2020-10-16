@@ -4,4 +4,4 @@ import ExpressServer from "./server/ExpressServer"
 import dotenv from "dotenv"
 dotenv.config()
 
-const WebServer = new NodeServer();
+const WebServer = new ExpressServer();
