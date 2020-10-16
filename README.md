@@ -61,12 +61,14 @@ _Nodemon is a tool that helps develop node.js based applications by automaticall
 
 2. Update __`package.json`__ by adding following line for precompiling ES6 and allowing nodemon to restart server when file changes
 
-        "scripts": {
-        +   "build": "babel src -d dist"
-        +   "start": "npm run build && node dist",
-        +   "restart": "rimraf dist && npm run start",
-        +   "dev": "nodemon --exec npm run restart"
-        }
+```diff
+ "scripts": {
++ "build": "babel src -d dist"
++ "start": "npm run build && node dist",
++ "restart": "rimraf dist && npm run start",
++ "dev": "nodemon --exec npm run restart"
+}
+```
 
 3. Create __`nodemon.json`__ file in your project's root directory
 
