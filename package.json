@@ -1,0 +1,36 @@
+{
+  "name": "Node-JS-ES6",
+  "version": "1.0.0",
+  "description": "Simple setup for using ES6 in Node JS server",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "start": "npm run build && node dist",
+    "restart": "rimraf dist && npm run start",
+    "dev": "nodemon --exec npm run restart",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hitsio/Node-JS-ES6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hitsio/Node-JS-ES6/issues"
+  },
+  "homepage": "https://github.com/hitsio/Node-JS-ES6#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.1",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.5"
+  }
+}
