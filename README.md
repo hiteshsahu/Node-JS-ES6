@@ -1,5 +1,11 @@
 # Node JS With ES6
 
+#### Getting sarted:
+Clone or Fork the project
+> npm install
+>
+> npm run dev
+
 ## How to Setup Node JS Server with [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [Babel](https://babeljs.io/docs/en/), & __[Nodemon](https://www.npmjs.com/package/nodemon)__
 
         import NodeServer from "./server/NodeServer"
